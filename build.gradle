@@ -10,7 +10,7 @@ repositories {
 
 eclipse {
   project {
-    name = "regexp"
+    name = "coding"
   }
 }
 
