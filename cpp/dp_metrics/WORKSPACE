@@ -1,0 +1,12 @@
+load("@bazel_tools//tools/build_defs/repo:http.bzl", "http_archive")
+load("@bazel_tools//tools/build_defs/repo:git.bzl", "git_repository")
+
+git_repository(
+  name = "google-differential-privacy",
+  commit = "608350cb93138687393e392f6a9cf542c42678ce",
+  remote = "https://github.com/google/differential-privacy",
+)
+
+load("@google-differential-privacy//:differential_privacy_deps.bzl", "differential_privacy_deps")
+
+differential_privacy_deps()
